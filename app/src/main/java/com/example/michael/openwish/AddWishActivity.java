@@ -11,6 +11,9 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -125,6 +128,16 @@ public class AddWishActivity extends Activity {
         this.user_name = extras.getString("user_name");
 
         Log.d("openWish", "started add wish with username " + this.user_name);
+        JSONObject request = new JSONObject();
+        try {
+            request.put("Test", 1);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        OpenWishAPI.postJson(OpenWishAPI.BASE_URL + "/addWish", request);
+
+
     }
 
 

@@ -22,12 +22,14 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        createVerifierStrings();
-
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
+        createVerifierStrings();
+
+
+
 
     }
 
@@ -59,6 +61,7 @@ public class MainActivity extends ActionBarActivity {
             Log.d("openWish", "Creating keys for 1st time");
             android_key = UUID.randomUUID().toString();
             Log.d("openWish", "User name is "+ android_key);
+            OpenWishAPI.createUser(android_key);
             prefs.edit().putString("id", android_key).commit();
         }
 

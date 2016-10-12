@@ -135,7 +135,7 @@ public class AddWishActivity extends Activity {
             e.printStackTrace();
         }
 
-        OpenWishAPI.postJson(OpenWishAPI.BASE_URL + "/addWish", request);
+        OpenWishAPI.addWish(this.user_name, "this is a wish", new JSONObject());
 
 
     }

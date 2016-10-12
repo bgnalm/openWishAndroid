@@ -31,8 +31,126 @@ public class OpenWishAPI {
 
     public static final String BASE_URL = "http://10.20.109.96:5000";
 
-    public static void createUser(String username){
-        
+    public static JSONObject addBug(String username, String bug){
+        try {
+            String url = BASE_URL + "/read_wish";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            data.put("bug", bug);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject getWish(String username, String wishID){
+        try {
+            String url = BASE_URL + "/read_wish";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            data.put("wish_id", wishID);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject getCreatedWishes(String username){
+        try {
+            String url = BASE_URL + "/get_wishes";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            data.put("created_wishes", true);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject getReadWishes(String username){
+        try {
+            String url = BASE_URL + "/get_wishes";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            data.put("read_wishes", true);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject readWish(String username){
+        try {
+            String url = BASE_URL + "/read_wish";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject rateWish(String username, String wishID, float rating){
+        try {
+            String url = BASE_URL + "/rate_wish";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            data.put("wish_id", wishID);
+            data.put("rating", rating);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject addWish(String username, String text, JSONObject optional){
+        try {
+            String url = BASE_URL + "/add_wish";
+            JSONObject data = new JSONObject();
+            JSONObject wish = new JSONObject();
+            data.put("user_name", username);
+            wish.put("text",text);
+            wish.put("optional", optional);
+            data.put("wish", wish);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject createUser(String username){
+        try {
+            String url = BASE_URL + "/create_user";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     public static JSONObject postJson(String url, JSONObject data){
@@ -65,6 +183,7 @@ public class OpenWishAPI {
 
         return null;
     }
+
     private static String convertStreamToString(InputStream is) {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -86,6 +205,7 @@ public class OpenWishAPI {
         }
         return sb.toString();
     }
+
 
 
 }

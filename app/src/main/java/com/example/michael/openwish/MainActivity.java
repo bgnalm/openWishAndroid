@@ -1,5 +1,6 @@
 package com.example.michael.openwish;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.nfc.Tag;
@@ -14,7 +15,7 @@ import android.view.View;
 import java.util.UUID;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity{
 
     String user_name = "";
 

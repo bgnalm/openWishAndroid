@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpenWish</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_wish">AddWishActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="wish_types">
+        <item>Type...</item>
+        <item>Services</item>
+        <item>Food and Dining</item>
+        <item>Technology</item>
+        <item>Nightlife and Social</item>
+        <item>Sports</item>
+        <item>Education</item>
+        <item>Work</item>
+        <item>Business</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

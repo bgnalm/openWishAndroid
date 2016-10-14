@@ -153,6 +153,20 @@ public class OpenWishAPI {
         return null;
     }
 
+    public static JSONObject time_left(String username){
+        try {
+            String url = BASE_URL + "/time_left";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
     public static JSONObject postJson(String url, JSONObject data){
         try {
             String jsonData = data.toString();

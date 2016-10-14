@@ -64,7 +64,7 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner"
+            android:id="@+id/type_spinnper"
             android:entries="@array/wish_types"
             android:clickable="true"
             android:background="@color/secondary_text_default_material_dark"
@@ -146,7 +146,8 @@
             android:text="Send"
             android:id="@+id/send_button"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="30dp"
+            android:onClick="sendButtonPressed" />
 
     </LinearLayout>
 

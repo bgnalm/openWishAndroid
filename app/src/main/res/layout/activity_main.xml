@@ -29,7 +29,8 @@
         android:layout_alignRight="@+id/createdWishesButton"
         android:layout_alignEnd="@+id/createdWishesButton"
         android:layout_alignLeft="@+id/createdWishesButton"
-        android:layout_alignStart="@+id/createdWishesButton" />
+        android:layout_alignStart="@+id/createdWishesButton"
+        android:onClick="readWishesButtonClick" />
 
     <Button
         android:layout_width="wrap_content"

@@ -41,7 +41,9 @@ public class MainActivity extends Activity{
     }
 
     public void readWishesButtonClick(View view){
-
+        Intent intent = new Intent(this, ReadWishesAtivity.class);;
+        intent.putExtra("user_name", this.user_name);
+        startActivity(intent);
     }
 
     public void createdWishesButtonClick(View view){

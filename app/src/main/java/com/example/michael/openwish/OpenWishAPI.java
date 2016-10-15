@@ -48,7 +48,7 @@ public class OpenWishAPI {
 
     public static JSONObject getWish(String username, String wishID){
         try {
-            String url = BASE_URL + "/read_wish";
+            String url = BASE_URL + "/get_wish";
             JSONObject data = new JSONObject();
             data.put("user_name", username);
             data.put("wish_id", wishID);

@@ -72,7 +72,6 @@ public class AddWishActivity extends Activity {
     public void loadUsername(){
         Intent intent = getIntent();
         this.username = intent.getStringExtra("user_name");
-
     }
 
     public boolean canPost(){
@@ -131,7 +130,12 @@ public class AddWishActivity extends Activity {
             e.printStackTrace();
         }
 
-        this.onBackPressed();
+        this.startReadWishActivity();
+    }
 
+    public void startReadWishActivity(){
+        Intent intent = new Intent(this, ReadWishActivity.class);;
+        intent.putExtra("user_name", this.username);
+        startActivity(intent);
     }
 }

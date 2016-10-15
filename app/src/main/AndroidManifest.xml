@@ -24,6 +24,10 @@
             android:label="@string/title_activity_add_wish"
             android:theme="@style/FullscreenTheme" >
         </activity>
+        <activity
+            android:name=".ReadWishActivity"
+            android:label="@string/title_activity_read_wish" >
+        </activity>
     </application>
 
 </manifest>

@@ -22,4 +22,6 @@
         <item>Other</item>
     </string-array>
 
+    <string name="title_activity_read_wish">ReadWishActivity</string>
+
 </resources>

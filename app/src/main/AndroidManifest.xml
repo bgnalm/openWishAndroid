@@ -28,6 +28,14 @@
             android:name=".ReadWishActivity"
             android:label="@string/title_activity_read_wish" >
         </activity>
+        <activity
+            android:name=".GetWishActivity"
+            android:label="@string/title_activity_get_wish" >
+        </activity>
+        <activity
+            android:name=".ReadWishesACtivity"
+            android:label="@string/title_activity_read_wishes_activity" >
+        </activity>
     </application>
 
 </manifest>

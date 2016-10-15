@@ -42,7 +42,8 @@
         android:layout_alignRight="@+id/bugsButton"
         android:layout_alignEnd="@+id/bugsButton"
         android:layout_alignLeft="@+id/bugsButton"
-        android:layout_alignStart="@+id/bugsButton" />
+        android:layout_alignStart="@+id/bugsButton"
+        android:onClick="createdWishesButtonClick" />
 
     <Button
         android:layout_width="wrap_content"

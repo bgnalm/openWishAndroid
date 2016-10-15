@@ -22,7 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-public class ReadWishesAtivity extends Activity implements View.OnClickListener {
+public class ReadWishesActivity extends Activity implements View.OnClickListener {
 
     String username;
 

@@ -33,8 +33,12 @@
             android:label="@string/title_activity_get_wish" >
         </activity>
         <activity
-            android:name=".ReadWishesAtivity"
+            android:name=".ReadWishesActivity"
             android:label="@string/title_activity_read_wishes_activity" >
+        </activity>
+        <activity
+            android:name=".CreatedWishesActivity"
+            android:label="@string/title_activity_created_wishes" >
         </activity>
     </application>
 

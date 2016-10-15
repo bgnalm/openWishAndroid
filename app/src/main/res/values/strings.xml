@@ -25,5 +25,6 @@
     <string name="title_activity_read_wish">ReadWishActivity</string>
     <string name="title_activity_get_wish">GetWishActivity</string>
     <string name="title_activity_read_wishes_activity">ReadWishesACtivity</string>
+    <string name="title_activity_created_wishes">CreatedWishesActivity</string>
 
 </resources>

@@ -3,9 +3,7 @@ package com.example.michael.openwish;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.nfc.Tag;
 import android.os.StrictMode;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -41,13 +39,15 @@ public class MainActivity extends Activity{
     }
 
     public void readWishesButtonClick(View view){
-        Intent intent = new Intent(this, ReadWishesAtivity.class);;
+        Intent intent = new Intent(this, ReadWishesActivity.class);;
         intent.putExtra("user_name", this.user_name);
         startActivity(intent);
     }
 
     public void createdWishesButtonClick(View view){
-
+        Intent intent = new Intent(this, CreatedWishesActivity.class);;
+        intent.putExtra("user_name", this.user_name);
+        startActivity(intent);
     }
 
     public void bugButtonClick(View view){

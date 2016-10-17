@@ -56,6 +56,12 @@ public class MainActivity extends Activity{
         startActivity(intent);
     }
 
+    public void helpButtonClick(View view){
+        Intent intent = new Intent(this, HelpActivity.class);;
+        intent.putExtra("user_name", this.user_name);
+        startActivity(intent);
+    }
+
     private void createVerifierStrings() {
         SharedPreferences prefs = this.getSharedPreferences("Someprefstringreference", 0);
         String not_set = "NOTSET";

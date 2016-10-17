@@ -44,6 +44,10 @@
             android:name=".SendBugActivity"
             android:label="@string/title_activity_send_bug" >
         </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
     </application>
 
 </manifest>

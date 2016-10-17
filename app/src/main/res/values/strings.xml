@@ -27,5 +27,6 @@
     <string name="title_activity_read_wishes_activity">ReadWishesACtivity</string>
     <string name="title_activity_created_wishes">CreatedWishesActivity</string>
     <string name="title_activity_send_bug">SendBugActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
 
 </resources>

@@ -11,47 +11,52 @@
         android:layout_height="wrap_content"
         android:text="Add a wish"
         android:id="@+id/addWishButton"
-        android:layout_above="@+id/readWishesButton"
-        android:layout_marginBottom="24dp"
-        android:layout_alignRight="@+id/readWishesButton"
-        android:layout_alignEnd="@+id/readWishesButton"
+        android:onClick="addWishButtonClick"
+        android:layout_below="@+id/version"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_marginTop="48dp"
         android:layout_alignLeft="@+id/readWishesButton"
-        android:layout_alignStart="@+id/readWishesButton"
-        android:onClick="addWishButtonClick" />
+        android:layout_alignStart="@+id/readWishesButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Read Wishes"
         android:id="@+id/readWishesButton"
-        android:layout_above="@+id/createdWishesButton"
-        android:layout_marginBottom="29dp"
+        android:onClick="readWishesButtonClick"
+        android:layout_below="@+id/addWishButton"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="22dp"
         android:layout_alignRight="@+id/createdWishesButton"
-        android:layout_alignEnd="@+id/createdWishesButton"
-        android:layout_alignLeft="@+id/createdWishesButton"
-        android:layout_alignStart="@+id/createdWishesButton"
-        android:onClick="readWishesButtonClick" />
+        android:layout_alignEnd="@+id/createdWishesButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Created Wishes"
         android:id="@+id/createdWishesButton"
-        android:layout_above="@+id/bugsButton"
-        android:layout_marginBottom="31dp"
-        android:layout_alignRight="@+id/bugsButton"
-        android:layout_alignEnd="@+id/bugsButton"
-        android:layout_alignLeft="@+id/bugsButton"
-        android:layout_alignStart="@+id/bugsButton"
-        android:onClick="createdWishesButtonClick" />
+        android:onClick="createdWishesButtonClick"
+        android:layout_below="@+id/readWishesButton"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_marginTop="22dp"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bug Report/Suggestions"
         android:id="@+id/bugsButton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/createdWishesButton"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_alignLeft="@+id/createdWishesButton"
+        android:layout_alignStart="@+id/createdWishesButton"
+        android:onClick="bugButtonClick" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,4 +80,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:textColor="@color/abc_background_cache_hint_selector_material_light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/helpButton"
+        android:layout_below="@+id/bugsButton"
+        android:layout_marginTop="22dp"
+        android:layout_alignRight="@+id/bugsButton"
+        android:layout_alignEnd="@+id/bugsButton"
+        android:layout_alignLeft="@+id/readWishesButton"
+        android:layout_alignStart="@+id/readWishesButton" />
 </RelativeLayout>

@@ -31,20 +31,6 @@ public class OpenWishAPI {
 
     public static final String BASE_URL = "http://10.20.109.96:5000";
 
-    public static JSONObject addBug(String username, String bug){
-        try {
-            String url = BASE_URL + "/read_wish";
-            JSONObject data = new JSONObject();
-            data.put("user_name", username);
-            data.put("bug", bug);
-            return postJson(url, data);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-
-        return null;
-    }
 
     public static JSONObject getWish(String username, String wishID){
         try {
@@ -158,6 +144,21 @@ public class OpenWishAPI {
             String url = BASE_URL + "/time_left";
             JSONObject data = new JSONObject();
             data.put("user_name", username);
+            return postJson(url, data);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static JSONObject send_bug(String username, String bug){
+        try {
+            String url = BASE_URL + "/send_bug";
+            JSONObject data = new JSONObject();
+            data.put("user_name", username);
+            data.put("bug", bug);
             return postJson(url, data);
         }
         catch (Exception e){

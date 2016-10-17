@@ -51,7 +51,9 @@ public class MainActivity extends Activity{
     }
 
     public void bugButtonClick(View view){
-
+        Intent intent = new Intent(this, SendBugActivity.class);;
+        intent.putExtra("user_name", this.user_name);
+        startActivity(intent);
     }
 
     private void createVerifierStrings() {

@@ -40,6 +40,10 @@
             android:name=".CreatedWishesActivity"
             android:label="@string/title_activity_created_wishes" >
         </activity>
+        <activity
+            android:name=".SendBugActivity"
+            android:label="@string/title_activity_send_bug" >
+        </activity>
     </application>
 
 </manifest>
